@@ -58,7 +58,7 @@ int main() {
     int value = 67;
 
     int p = lower_bound(&arr[1], &arr[1+cnt], value) - &arr[0];//大于等于中最小的元素
-    int p = upper_bound(&arr[1], &arr[1+cnt], value) - &arr[0];//大于中最小的元素
+    p = upper_bound(&arr[1], &arr[1+cnt], value) - &arr[0];//大于中最小的元素
     //cout << p << endl;
     
     if (arr[p] != value)
@@ -77,7 +77,7 @@ int mybinary1(int le, int ri, int num) {
     int curmid = (le + ri) / 2;
 
     if (le > ri)
-        return;
+        return curmid;
 
     if (arr[curmid] >= num) {
 
@@ -96,7 +96,6 @@ int mybinary1(int le, int ri, int num) {
 
 //在无序数组中寻找一个峰值
 
-int ans = -1;
 int n;
 int mybinary2() {
 

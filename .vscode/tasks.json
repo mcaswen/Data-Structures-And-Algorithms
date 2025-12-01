@@ -7,7 +7,7 @@
       "command": "/bin/bash",
       "args": [
         "-c",
-        "mkdir -p \"${workspaceFolder}/Compile/${relativeFileDirname}\" && /usr/bin/clang++ -std=c++17 -g -O0 \"${file}\" -o \"${workspaceFolder}/Compile/${relativeFileDirname}/${fileBasenameNoExtension}_debug\""
+        "mkdir -p \"${workspaceFolder}/Compiled/${relativeFileDirname}\" && /usr/bin/clang++ -std=c++17 -g -O0 \"${file}\" -o \"${workspaceFolder}/Compiled/${relativeFileDirname}/${fileBasenameNoExtension}_debug\""
       ],
       "options": {
         "cwd": "${fileDirname}",
@@ -29,7 +29,7 @@
       "command": "/bin/bash",
       "args": [
         "-c",
-        "mkdir -p \"${workspaceFolder}/Compile/${relativeFileDirname}\" && /usr/bin/clang++ -std=c++17 -O2 \"${file}\" -o \"${workspaceFolder}/Compile/${relativeFileDirname}/${fileBasenameNoExtension}_release\""
+        "mkdir -p \"${workspaceFolder}/Compiled/${relativeFileDirname}\" && /usr/bin/clang++ -std=c++17 -O2 \"${file}\" -o \"${workspaceFolder}/Compiled/${relativeFileDirname}/${fileBasenameNoExtension}_release\""
       ],
       "options": {
         "cwd": "${fileDirname}",

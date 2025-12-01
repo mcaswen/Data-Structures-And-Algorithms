@@ -5,18 +5,18 @@
       "type": "lldb",
       "request": "launch",
       "name": "Debug",
-      "program": "${workspaceFolder}/Compile/${relativeFileDirname}/${fileBasenameNoExtension}_debug",
+      "program": "${workspaceFolder}/Compiled/${relativeFileDirname}/${fileBasenameNoExtension}_debug",
       "args": [],
-      "cwd": "${workspaceFolder}/Compile",
+      "cwd": "${workspaceFolder}/Compiled",
       "preLaunchTask": "C++ Build (Debug)"
     },
     {
       "type": "lldb",
       "request": "launch",
       "name": "Release",
-      "program": "${workspaceFolder}/Compile/${relativeFileDirname}/${fileBasenameNoExtension}_release",
+      "program": "${workspaceFolder}/Compiled/${relativeFileDirname}/${fileBasenameNoExtension}_release",
       "args": [],
-      "cwd": "${workspaceFolder}/Compile",
+      "cwd": "${workspaceFolder}/Compiled",
       "preLaunchTask": "C++ Build (Release)"
     }
   ]
