@@ -2,6 +2,7 @@
 #include <utility>
 #include <vector>
 #include <iostream>
+#include <unordered_map>
 
 /// leetcode 1 两数之和
 /// 要找到两个数的和，其实就是在数组对每个数都找另外一个加数，使其和为目标数
