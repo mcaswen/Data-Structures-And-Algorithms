@@ -46,3 +46,5 @@ compile_flags.txt
 
 # debug information files
 *.dwo
+
+*.sh
