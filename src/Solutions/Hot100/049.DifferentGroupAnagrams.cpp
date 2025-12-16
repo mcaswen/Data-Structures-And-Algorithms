@@ -21,7 +21,7 @@
 
 using namespace std;
 
-vector<vector<string>> Solve(vector<string>& strs);
+vector<vector<string> > Solve(vector<string>& strs);
 
 int main()
 {
@@ -44,10 +44,10 @@ int main()
     }
 }
 
-vector<vector<string>> Solve(vector<string>& strs)
+vector<vector<string> > Solve(vector<string>& strs)
 {   
-    unordered_map <string, vector<string>> alphaMap;
-    vector<vector<string>> anss;
+    unordered_map <string, vector<string> > alphaMap;
+    vector<vector<string> > anss;
 
     for (auto& str: strs)
     {
