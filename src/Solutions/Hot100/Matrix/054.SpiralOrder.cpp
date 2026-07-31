@@ -104,3 +104,44 @@ void TraverseOuter(vector<vector<int>>& matrix, vector<int>& ans, int n, int m, 
 
 // 3 3
 // 1 2 3 4 5 6 7 8 9
+
+/// 迭代版本
+
+vector<int> spiralOrder(vector<vector<int>>& matrix) {
+    vector<int> ans;
+    int n = matrix.size();
+    int m = matrix[0].size();
+    
+    int top = 0, bottom = n - 1;
+    int left = 0, right = m - 1;
+    
+    while (top <= bottom && left <= right) {
+        // 上边：从左到右
+        for (int j = left; j <= right; j++)
+            ans.push_back(matrix[top][j]);
+        top++;
+        
+        // 右边：从上到下
+        for (int i = top; i <= bottom; i++)
+            ans.push_back(matrix[i][right]);
+        right--;
+        
+        // 检查是否还有下边
+        if (top <= bottom) {
+            // 下边：从右到左
+            for (int j = right; j >= left; j--)
+                ans.push_back(matrix[bottom][j]);
+            bottom--;
+        }
+        
+        // 检查是否还有左边
+        if (left <= right) {
+            // 左边：从下到上
+            for (int i = bottom; i >= top; i--)
+                ans.push_back(matrix[i][left]);
+            left++;
+        }
+    }
+    
+    return ans;
+}
